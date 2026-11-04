@@ -1,0 +1,29 @@
+
+.music-tab-bar {
+  --background: #17131f;
+  --color: #82788e;
+  --color-selected: #c58af2;
+
+  border-top: 1px solid #35283f;
+  height: 65px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+
+.music-tab-bar ion-tab-button {
+  --ripple-color: #7629b8;
+}
+
+.music-tab-bar ion-tab-button ion-icon {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.music-tab-bar ion-tab-button ion-label {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.music-tab-bar ion-tab-button.tab-selected ion-label {
+  font-weight: 700;
+}

@@ -1,7 +1,36 @@
 
 import { defineCustomElements } from '@ionic/core/loader';
 
-// Registrar componentes de Ionic
+import { addIcons } from 'ionicons';
+
+import {
+  personCircleOutline,
+  searchOutline,
+  musicalNotesOutline,
+  headsetOutline,
+  chevronForwardOutline,
+  play,
+  homeOutline,
+compassOutline,
+heartOutline,
+albumsOutline,
+personOutline
+} from 'ionicons/icons';
+
+// Registrar los iconos
+addIcons({
+  'person-circle-outline': personCircleOutline,
+  'home-outline': homeOutline,
+'compass-outline': compassOutline,
+'heart-outline': heartOutline,
+'albums-outline': albumsOutline,
+'person-outline': personOutline,
+  'search-outline': searchOutline,
+  'musical-notes-outline': musicalNotesOutline,
+  'headset-outline': headsetOutline,
+  'chevron-forward-outline': chevronForwardOutline,
+  'play': play
+});
 defineCustomElements(window);
 
 // Estilos de Ionic

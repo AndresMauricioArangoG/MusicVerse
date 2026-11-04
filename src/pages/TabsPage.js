@@ -1,4 +1,6 @@
 
+import './TabsPage.css';
+
 class TabsPage extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -58,26 +60,33 @@ class TabsPage extends HTMLElement {
           </div>
         </ion-tab>
 
-        <ion-tab-bar slot="bottom">
+        <ion-tab-bar slot="bottom" class="music-tab-bar">
+
           <ion-tab-button tab="inicio">
+            <ion-icon name="home-outline"></ion-icon>
             <ion-label>Inicio</ion-label>
           </ion-tab-button>
 
           <ion-tab-button tab="explorar">
+            <ion-icon name="compass-outline"></ion-icon>
             <ion-label>Explorar</ion-label>
           </ion-tab-button>
 
           <ion-tab-button tab="favoritos">
+            <ion-icon name="heart-outline"></ion-icon>
             <ion-label>Favoritos</ion-label>
           </ion-tab-button>
 
           <ion-tab-button tab="playlists">
+            <ion-icon name="albums-outline"></ion-icon>
             <ion-label>Playlists</ion-label>
           </ion-tab-button>
 
           <ion-tab-button tab="perfil">
+            <ion-icon name="person-outline"></ion-icon>
             <ion-label>Perfil</ion-label>
           </ion-tab-button>
+
         </ion-tab-bar>
 
       </ion-tabs>
